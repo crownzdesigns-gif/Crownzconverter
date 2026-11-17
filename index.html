@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/brand/logo-128.png" />
+    <link rel="apple-touch-icon" href="/brand/logo-512.png" />
+    <script>
+      // Apply the saved theme before first paint to avoid a flash.
+      document.documentElement.dataset.theme =
+        localStorage.getItem("crownz-theme") === "light" ? "light" : "dark";
+    </script>
+    <meta name="description" content="Convert, compress, and edit any file — video, audio, image, PDF, or GIF — right in your browser. Files never leave your device." />
+    <title>CrownzConverter — Convert, Compress & Edit Files</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
